@@ -32,6 +32,14 @@
 
 	echo "<p>Welcome to Math Game, ".$query_array["user"]."</p>";
 	echo"</pre>";
+
 ?>
+
+
+<form action="check_login.php" method="post" id="form_id">
+	<input type="submit" name="delete_account" id="delete_account" value="Delete Account" />
+</form>
+
+
 </body>
 </html>

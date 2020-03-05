@@ -14,7 +14,16 @@
 		<br/><br/>
 		Password:
 		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
-		<input type="submit" name="submit_id" id="login" value="Login" />
+
+		<input type="radio" name="account_type" id="teacher" value="teacher">
+		<label for="teacher">Teacher</label>
+		<input type="radio" name="account_type" id="student"  value="student">
+		<label for="student">Student</label><br><br>
+
+		<input type="submit" name="login" id="login" value="Login" />
+		<input type="submit" name="create_account" id="create_account" value="Create Account" />
+
+
 	</form>
 
 </body>

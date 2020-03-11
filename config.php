@@ -1,3 +1,3 @@
 <?php
-	define("USERFILE", "../DB/user_file.txt");
+	define("USERFILE", "user_file.txt");
 ?>

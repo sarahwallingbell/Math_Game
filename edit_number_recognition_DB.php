@@ -18,6 +18,7 @@ for ($i=10; $i < 1000; $i++) {
 	fclose($myFile);
 }
 
+
 function generate_question_and_answer($num){
 	$str = $num;
 

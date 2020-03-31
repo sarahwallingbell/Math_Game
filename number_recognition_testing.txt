@@ -1,6 +1,0 @@
-12 2 ones 1
-45 4 tens 1
-623 3 ones 2
-412 1 tens 2
-735 7 hundreds 3
-890 8 hundreds 3

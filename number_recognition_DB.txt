@@ -726,8 +726,7 @@
 984 4 ones 
 985 5 ones 
 986 9 hundreds 
-987 7 ones 
-ndreds 
+987 7 ones  
 986 8 tens 
 987 7 ones 
  

@@ -2,6 +2,7 @@
 <?php
 require_once 'files.php';
 require_once 'config.php';
+require_once 'logic.php';
 echo "<pre>";
  /*names of two input: username and password*/
 // foreach($_POST as $key => $val){
@@ -41,7 +42,11 @@ if (isset($_POST['login'])) {
 
 			if($re===$correct_login){
 				/*Redirect browser*/
-				header("Location: welcome.php/?user=$username");
+				my_session_start();
+				$_SESSION['username'] = $username;
+				#$all_user = get_user_info(USERFILE, USERFILEKEY);
+				$_SESSION['user_type'] = $account_type;
+				header("Location: welcome.php?user=$username");
 
 			}else{
 				echo "Invalid username, password, or login type";
@@ -72,11 +77,14 @@ elseif (isset($_POST['create_account'])) {
 					/*Redirect to login.php after 5 seconds*/
 				header("refresh:3; url=login.php"); //Uncomment to redirect to login page after 5 seconds.
 			}
-			//username doesn't exist! proceed to make accound.
+			//username doesn't exist! proceed to make account.
 			else{
 				$new_account = array($username, $password, $account_type);
 				save_data(USERFILE, $new_account);
-
+				my_session_start();
+				$_SESSION['username'] = $username;
+				// $all_user = get_user_info(USERFILE, USERFILEKEY);
+				$_SESSION['user_type'] = $account_type;
 				header("Location: welcome.php/?user=$username");
 
 			}

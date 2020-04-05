@@ -12,8 +12,9 @@ $current_answer = pick_print_problem();
 //get user response and redirect to nrcheckanswer.php
 echo <<<_END
 	<form action="nrcheckanswer.php?method=1&answer=$current_answer" method="post">
-    	Answer:<input type="text" id="digitplace" name="digitplace">
-    	<input type="submit">
+    	<input type="submit" name="hundreds" id="hundreds" value="hundreds" />
+		<input type="submit" name="tens" id="tens" value="tens" />
+		<input type="submit" name="ones" id="ones" value="ones" />
 	</form>
 _END;
 ?>

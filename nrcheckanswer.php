@@ -19,7 +19,16 @@ function check_answer($right_answer){
         $_SESSION['total']=1;
     }
     //extract user answer
-    $user_answer= $_POST["digitplace"];
+    extract($_POST);
+    if(isset($_POST['hundreds'])){
+        $user_answer = "hundreds";
+    }
+    elseif(isset($_POST['tens'])){
+        $user_answer = "tens";
+    }
+    else{
+        $user_answer="ones";
+    }
     if($user_answer==$right_answer){
     //increase correct question count by 1
         if(isset($_SESSION['correct'])){

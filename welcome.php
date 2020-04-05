@@ -5,40 +5,31 @@
 	<title>Math Game</title>
 	</head>
 <body>
-<?php
-
-   function prepare_query_string(){
-		//echo $_SERVER['QUERY_STRING'];
-		$re = [];
-		$query_array = explode("&", $_SERVER["QUERY_STRING"]);
-		foreach ($query_array as $key => $value) {
-		$temp = explode("=", $value);
-		$re[$temp[0]] = $temp[1];
-		}
-		return $re;
+<style>
+	#welcome{
+		margin: 0px 0px 0px 10px;
 	}
-?>
-
-
+</style>
 <?php
-	echo "<pre>";
-	/*foreach ($_SERVER as $key => $value) {
-		echo "$key:$value\n";
-	}*/
+	require_once 'menu_bar.php';
+	require_once 'logic.php';
 
-	$query_array = prepare_query_string();
-	//print_r($query_array);
+	my_session_start();
 
+	if(isset($_SESSION['username'])){
+		$username = $_SESSION['username'];
 
-	echo "<p>Welcome to Math Game, ".$query_array["user"]."</p>";
-	echo"</pre>";
+		echo <<<_END
+		<div id="welcome">
+			Welcome to Math Game, $username
+		<div>
+		_END;
+
+	}
+
 
 ?>
 
-
-<form action="check_login.php" method="post" id="form_id">
-	<input type="submit" name="delete_account" id="delete_account" value="Delete Account" />
-</form>
 
 
 </body>

@@ -3,12 +3,13 @@
 <head>
 </head>
 <body>
-    <?php
-    //!!Change to when person logs out once we have that running
-        session_start();
-        session_unset();
-        session_destroy();
-    ?>
-    You won!
+
+You won!<br><br>
+Now returning you to your home page
+
+
+<meta http-equiv="refresh" content="3;url=welcome.php?user=$_SESSION[username]"/>
+
+
 </body>
 </html>

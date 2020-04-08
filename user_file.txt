@@ -1,6 +1,6 @@
 manya mpassword student
 sophia spassword student
 ben bpassword teacher
-ethan epassword student
+ethan 123 student
 sarah 123 student
 teach 123 teacher

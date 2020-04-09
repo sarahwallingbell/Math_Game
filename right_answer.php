@@ -8,7 +8,9 @@
 	session_start();
 	$user = $_SESSION["username"];
 
-	
+	require_once('menu_bar.php');
+
+
 	echo <<<_END
     That is correct!
     <form action="nrplaygame.php" method="post" id="form_id">

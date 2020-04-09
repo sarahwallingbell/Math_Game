@@ -7,6 +7,7 @@
 <?php
 //pick and print a problem, record correct answer
 require_once('nrgame.php');
+require_once('menu_bar.php');
 $current_answer = pick_print_problem();
 
 //get user response and redirect to nrcheckanswer.php

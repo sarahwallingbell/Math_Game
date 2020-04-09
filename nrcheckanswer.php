@@ -11,6 +11,7 @@ if($arr['method']==1){
 //check answer and redirect appropriately
 function check_answer($right_answer){
     session_start();
+    //TODO update database: num_problems_attempted++
     //increase total question count by 1
     if(isset($_SESSION['total'])){
         $_SESSION['total']++;
@@ -30,6 +31,7 @@ function check_answer($right_answer){
         $user_answer="ones";
     }
     if($user_answer==$right_answer){
+      //TODO update the database: correct_answers++
     //increase correct question count by 1
         if(isset($_SESSION['correct'])){
             $_SESSION['correct']++;
@@ -43,11 +45,14 @@ function check_answer($right_answer){
             header("Location: right_answer.php");
         }
         else{
+            $_SESSION['correct']=0; //reset to zero once game ends
+            //TODO update database: num_games_won++
             header("Location: won_game.php");
         }
 
     }
     else{
+      //TODO update database: num_wrong_answers++
     //go to incorrect answer page
         header("Location: wrong_answer.php?correct_answer=$right_answer");
     }

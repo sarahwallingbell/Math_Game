@@ -6,7 +6,7 @@
 
 	</head>
 <body>
-	<form action="edit_number_recognition_DB.php" method="post" id="form_id">
+	<form action="Number_Recognition_Add_Remove_Edit_DB.php" method="post" id="form_id">
 		<h2>Add/Remove Number Recognition Problem</h2>
 
 		Full Number:

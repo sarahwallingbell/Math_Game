@@ -13,7 +13,13 @@
     .center_text{
     	text-align: center;
     }
+    #button{
+        width:400px;
+        margin:auto;
+        text-align: center;
+    }
     </style>
+    <br><br><br>
     <div class="center_text">That is correct! You have earned the next piece of your burger!</div>
     <?php
     require_once("additiongame.php");
@@ -22,8 +28,11 @@
     echo <<<_END
     <br>
     <img class="center" src=$burger_images[$current_image]>
+    <br>
     <form action="additionplaygame.php" method="post" id="form_id" class:"center_text">
-    	<input type="submit" name="next_problem" id="next_problem" value="Next Problem" />
+        <div id="button">
+        <input type="submit" name="next_problem" id="next_problem" value="Next Problem">
+        </div>
     </form>
     _END;
     ?>

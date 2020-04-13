@@ -19,7 +19,7 @@
 
 	echo <<<_END
 			<li id = "button">
-					<a href="./play_addition_game.php?user=$_SESSION[username]" class="link">Play!</a>
+					<a href="./additionplaygame.php?user=$_SESSION[username]" class="link">Play!</a>
 			</li>
 			</li>
 	_END;

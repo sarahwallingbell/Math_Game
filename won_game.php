@@ -3,12 +3,13 @@
 <head>
 </head>
 <body>
-
+<?php
+require_once 'menu_bar.php';
+?>
 You won!<br><br>
-Now returning you to your home page
 
 
-<meta http-equiv="refresh" content="3;url=welcome.php?user=$_SESSION[username]"/>
+<meta http-equiv="refresh" content="3;url=number_recognition.php?user=$_SESSION[username]"/>
 
 
 </body>

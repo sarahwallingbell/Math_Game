@@ -28,13 +28,14 @@ function check_answer($right_answer){
         else{
             $_SESSION['correct']=1;
         }
+        $_SESSION['burger_image']++;
     //go to correct answer page if haven't won, or to win screen if have
 
         if($_SESSION['correct']<POINTS_TO_WIN){
             header("Location: addition_right_answer.php");
         }
         else{
-            header("Location: won_game.php");
+            header("Location: addition_won_game.php");
         }
 
     }

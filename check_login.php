@@ -85,7 +85,7 @@ elseif (isset($_POST['create_account'])) {
 				$_SESSION['username'] = $username;
 				// $all_user = get_user_info(USERFILE, USERFILEKEY);
 				$_SESSION['user_type'] = $account_type;
-				header("Location: welcome.php/?user=$username");
+				header("Location: welcome.php?user=$username");
 
 			}
 	}

@@ -3,10 +3,17 @@
 <head>
 </head>
 <body>
+<style type="text/css">
+.center_text{
+    text-align: center;
+}
+</style>
+
 <?php
 require_once 'menu_bar.php';
 ?>
-You won!<br><br>
+<br><br><br>
+<div class="center_text">You won!</div>
 
 
 <meta http-equiv="refresh" content="3;url=number_recognition.php?user=$_SESSION[username]"/>

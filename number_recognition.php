@@ -3,8 +3,8 @@
 		margin: 0px 0px 0px 10px;
 	}
 	#button{
-		
-		
+
+
 		display: inline-block;
 	}
 </style>
@@ -25,12 +25,13 @@
 					<a href="./nrplaygame.php?user=$_SESSION[username]" class="link">Play!</a>
 			</li>
 			</li>
+			<br>
 	_END;
 
 	if($_SESSION['user_type'] == "teacher"){
 			echo <<<_END
-			<li class="button">
-					<a href="./add_remove_problem_number_recognition.php?user=$_SESSION[username]" class="link">Add a Problem</a>
+			<li id ="button">
+					<a href="./add_remove_problem_number_recognition.php?user=$_SESSION[username]" class="link">Add or Remove a Problem</a>
 			</li>
 			_END;
 	}

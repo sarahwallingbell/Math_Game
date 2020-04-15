@@ -27,7 +27,7 @@
 	if($_SESSION['user_type'] == "teacher"){
 			echo <<<_END
 			<li class="button">
-					<a href="./add_subtraction_problem.php?user=$_SESSION[username]" class="link">Add a Problem</a>
+					<a href="./add_remove_subtraction.php?user=$_SESSION[username]" class="link">Add or Remove a Problem</a>
 			</li>
 			_END;
 	}

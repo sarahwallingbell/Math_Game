@@ -32,12 +32,10 @@ echo <<<_END
     <br>
     <img class="center" src=$burger_images[$current_image]>
     <br>
-    <form action="welcome.php" method="post" id="form_id" class:"center_text">
-        <div id="button">
-    	<input type="submit" name="return_menu" id="return_menu" value="Return To Menu" />
-        </div>
-    </form>
 _END;
 ?>
+
+<meta http-equiv="refresh" content="3;url=addition.php?user=$_SESSION[username]"/>
+
 </body>
 </html>

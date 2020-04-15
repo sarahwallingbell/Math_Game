@@ -3,7 +3,9 @@
 		margin: 0px 0px 0px 10px;
 	}
 	#button{
-
+		
+		
+		display: inline-block;
 	}
 </style>
 
@@ -13,7 +15,8 @@
 	echo <<<_END
 	<div id="welcome">
 	Welcome to number recognition game, $user
-	<br>Here are the rules:
+	<br><br>Here are the rules:
+	<br>A question will appear on the screen that will ask you to pick which place a specific digit is located within a number. Select the correct answer.
 	</div>
 	_END;
 

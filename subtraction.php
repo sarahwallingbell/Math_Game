@@ -3,7 +3,7 @@
 		margin: 0px 0px 0px 10px;
 	}
 	#button{
-
+		display: inline-block;
 	}
 </style>
 

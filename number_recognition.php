@@ -16,7 +16,7 @@
 	<div id="welcome">
 	Welcome to number recognition game, $user
 	<br><br>Here are the rules:
-	<br>A question will appear on the screen that will ask you to pick which place a specific digit is located within a number. Select the correct answer.
+	<br>A question will appear on the screen that will ask you to pick which place a specific digit is located within a number. Select the correct answer. Get five questions right to win the game!
 	</div>
 	_END;
 
@@ -30,7 +30,7 @@
 	if($_SESSION['user_type'] == "teacher"){
 			echo <<<_END
 			<li class="button">
-					<a href="./add_number_recognition_problem.php?user=$_SESSION[username]" class="link">Add a Problem</a>
+					<a href="./add_remove_problem_number_recognition.php?user=$_SESSION[username]" class="link">Add a Problem</a>
 			</li>
 			_END;
 	}

@@ -16,12 +16,14 @@
 }
 #problem{
 	width:400px;
-	margin:auto;
-	text-align: center;
+	margin: 0px 0px 0px 700px;
+	text-align: right;
 }
 </style>
 
 <?php
+
+require_once("menu_bar.php");
 //pick and print a problem, record correct answer
 require_once('additiongame.php');
 $current_problem = pick_problem();
@@ -34,7 +36,7 @@ $current_image = $_SESSION['burger_image'];
 //get user response and redirect to additioncheckanswer.php
 echo <<<_END
 	<br><br><br>
-	<div id:"problem">
+	<div class="center_text">
 		$current_problem
 	</div>
 	<form action="additioncheckanswer.php?method=1&answer=$current_answer" method="post" class="center_text">

@@ -5,6 +5,7 @@
 <body>
     That is incorrect.
     <?php
+    require_once("menu_bar.php");
         //get info passed by last page
         function prepare_query_string(){
                 $re = [];

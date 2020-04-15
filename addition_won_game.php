@@ -25,9 +25,9 @@
 require_once("additiongame.php");
 session_start();
 $current_image = $_SESSION['burger_image'];
-unset($_SESSION['correct']);
+unset($_SESSION['add_correct']);
 unset($_SESSION['burger_image']);
-unset($_SESSION['total']);
+unset($_SESSION['add_total']);
 echo <<<_END
     <br>
     <img class="center" src=$burger_images[$current_image]>

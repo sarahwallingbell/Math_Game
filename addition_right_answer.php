@@ -19,6 +19,9 @@
         text-align: center;
     }
     </style>
+    <?php
+    require_once("menu_bar.php");
+    ?>
     <br><br><br>
     <div class="center_text">That is correct! You have earned the next piece of your burger!</div>
     <?php

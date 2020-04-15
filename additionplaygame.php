@@ -44,7 +44,7 @@ echo <<<_END
     	<input type="submit">
 	</form>
 	<br>
-	<img src=$burger_images[$current_image] class="center">
+	<img src=$burger_images[$current_image] width=300 height=$burger_height[$current_image] class="center">
 _END;
 ?>
 </body>

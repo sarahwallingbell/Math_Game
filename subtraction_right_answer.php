@@ -30,7 +30,7 @@
     $current_image = $_SESSION['burger_image_sub'];
     echo <<<_END
     <br>
-    <img class="center" src=$burger_images[$current_image]>
+    <img class="center" src=$burger_images[$current_image] width=300 height=$burger_height[$current_image]>
     <br>
     <form action="subtractionplaygame.php" method="post" id="form_id" class:"center_text">
         <div id="button">

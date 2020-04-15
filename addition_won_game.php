@@ -30,7 +30,7 @@ unset($_SESSION['burger_image']);
 unset($_SESSION['add_total']);
 echo <<<_END
     <br>
-    <img class="center" src=$burger_images[$current_image]>
+    <img class="center" src=$burger_images[$current_image] width=300 height=$burger_height[$current_image] >
     <br>
 _END;
 ?>

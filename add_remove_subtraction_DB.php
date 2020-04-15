@@ -1,7 +1,7 @@
 <?php
 require_once("menu_bar.php");
 echo "<pre>";
-$fileName = "subtraction_testing.txt";
+$fileName = "subtractionDB.txt";
 $myFilePath="./".$fileName;
 $myFile = fopen(getcwd()."/".$fileName, "a+");
 $fileContents = file_get_contents($myFilePath, NULL);
@@ -14,7 +14,7 @@ $firstnumber=$_POST['firstnumber'];
 $secondnumber=$_POST['secondnumber'];
 $difference=$_POST['difference'];
 
-$line = "".$firstnumber." ".$secondnumber." ".$difference." ";
+$line = "".$firstnumber." ".$secondnumber." ".$difference."\n";
 if (isset ($_POST['add_problem'])){
 	if ($firstnumber =="" or $secondnumber == "" or !isset($difference)){
 		echo "Incomplete problem information, please fill all fields and try again.";
@@ -23,14 +23,17 @@ if (isset ($_POST['add_problem'])){
 	//if we get here, that means that all fields are entered
 	elseif (strpos($fileContents, ($line)) !== false){
 		echo "Problem already exists in problem set!";
+		header("refresh:3; url=add_remove_subtraction.php");
 	}
 	//all fields entered, but result is negative
 	elseif ($firstnumber - $secondnumber < 0) {
 		echo "Sorry, only problems with a positive result are allowed.";
+		header("refresh:3; url=add_remove_subtraction.php");
 	}
 	//all fields entered, but number1-number2 != difference
 	elseif ($firstnumber - $secondnumber != $difference){
 		echo "Error: ".$firstnumber." - ".$secondnumber." does not equal ".$difference.".";
+		header("refresh:3; url=add_remove_subtraction.php");
 	}
 	else{
 		//add the line to the contents of the file
@@ -41,13 +44,14 @@ if (isset ($_POST['add_problem'])){
 	}
 }
 elseif (isset($_POST['remove_problem'])){
-	if ($firstnumber =="" or $secondnumber == "" or !isset($sum)){
+	if ($firstnumber =="" or $secondnumber == "" or !isset($difference)){
 		echo "Incomplete problem information, please fill all fields and try again.";
-		header("refresh:3; url= add_remove_addition.php");
+		header("refresh:3; url= add_remove_subtraction.php");
 	}
 	//if we get here, that means that all fields are entered
 	elseif (strpos($fileContents, ($line)) == false){
 		echo "Problem does not exist in problem set, please try again.";
+		header("refresh:3; url=add_remove_subtraction.php");
 	}
 	//if we get here, we should remove it.
 	else {

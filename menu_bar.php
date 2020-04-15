@@ -127,6 +127,7 @@
             <a href= "" class="link">$_SESSION[username]</a>
             <ul class = "menulist">
                 <li><a href="logic.php?method=1" class= "link2">logout</a></li>
+                <li><a href="delete_account.php" class= "link2">Delete Account</a></li>
             </ul>
         </li>
     _END;

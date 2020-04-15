@@ -3,3 +3,4 @@ ben bpassword teacher
 ethan 123 student
 sarah 123 student
 teach 123 teacher
+manyam 12345 teacher

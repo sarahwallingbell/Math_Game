@@ -25,13 +25,13 @@
 
 require_once("menu_bar.php");
 //pick and print a problem, record correct answer
-require_once('additiongame.php');
+require_once('subtractiongame.php');
 $current_problem = pick_problem();
 session_start();
-if(!isset($_SESSION['burger_image'])){
-	$_SESSION['burger_image']=0;
+if(!isset($_SESSION['burger_image_sub'])){
+	$_SESSION['burger_image_sub']=0;
 }
-$current_image = $_SESSION['burger_image'];
+$current_image = $_SESSION['burger_image_sub'];
 
 //get user response and redirect to additioncheckanswer.php
 echo <<<_END
@@ -39,12 +39,12 @@ echo <<<_END
 	<div class="center_text">
 		$current_problem
 	</div>
-	<form action="additioncheckanswer.php?method=1&answer=$current_answer" method="post" class="center_text">
+	<form action="subtractioncheckanswer.php?method=1&answer=$current_answer" method="post" class="center_text">
     	<input type="text" id="digitplace" name="digitplace">
     	<input type="submit">
 	</form>
 	<br>
-	<img src=$burger_images[$current_image] width=300 height=$burger_height[$current_image] class="center">
+	<img src=$burger_images[$current_image] class="center" width=300 height=$burger_height[$current_image]>
 _END;
 ?>
 </body>

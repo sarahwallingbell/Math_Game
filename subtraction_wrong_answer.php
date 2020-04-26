@@ -38,7 +38,7 @@
             <br>
         _END;
     ?>
-    <form action="additionplaygame.php" method="post" id="form_id" class="center_text">
+    <form action="subtractionplaygame.php" method="post" id="form_id" class="center_text">
     	<input type="submit" name="next_problem" id="next_problem" value="Next Problem" />
     </form>
 </body>

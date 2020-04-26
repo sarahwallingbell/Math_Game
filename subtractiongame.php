@@ -1,5 +1,5 @@
 <?php
-    define("FILENAME","additionDB.txt");
+    define("FILENAME","subtractionDB.txt");
     define("POINTS_TO_WIN",10);
 
     $burger_images = array();
@@ -28,7 +28,6 @@
     $burger_height[] = 470;
     $burger_height[] = 500;
 
-
     global $num_probs;
     global $current_answer;
     //get problems from file and store in array
@@ -55,6 +54,6 @@
         $number2 = $problems[$prob_num][1];
         global $current_answer;
         $current_answer = $problems[$prob_num][2];
-        return $number1." + ".$number2." = ";
+        return $number1." - ".$number2." = ";
     }
 ?>

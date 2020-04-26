@@ -25,14 +25,14 @@
     <br><br><br>
     <div class="center_text">That is correct! You have earned the next piece of your burger!</div>
     <?php
-    require_once("additiongame.php");
+    require_once("subtractiongame.php");
     session_start();
-    $current_image = $_SESSION['burger_image'];
+    $current_image = $_SESSION['burger_image_sub'];
     echo <<<_END
     <br>
-    <img class="center" src=$burger_images[$current_image] width=300 height=$burger_height[$current_image] >
+    <img class="center" src=$burger_images[$current_image] width=300 height=$burger_height[$current_image]>
     <br>
-    <form action="additionplaygame.php" method="post" id="form_id" class:"center_text">
+    <form action="subtractionplaygame.php" method="post" id="form_id" class:"center_text">
         <div id="button">
         <input type="submit" name="next_problem" id="next_problem" value="Next Problem">
         </div>

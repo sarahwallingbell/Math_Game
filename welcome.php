@@ -8,6 +8,8 @@
 <style>
 	#welcome{
 		margin: 0px 0px 0px 10px;
+		text-align: center;
+		font-size: 50px;
 	}
 </style>
 <?php
@@ -21,7 +23,10 @@
 
 		echo <<<_END
 		<div id="welcome">
+			<br><br>
 			Welcome to Math Game, $username
+			<br>
+			<img src="goodburger10.png">
 		<div>
 		_END;
 

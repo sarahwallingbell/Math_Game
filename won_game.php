@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<style type="text/css">
-.center_text{
-    text-align: center;
-}
-</style>
 
 <?php
 require_once 'menu_bar.php';

@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<style type="text/css">
-.center_text{
-    text-align: center;
-}
-</style>
 
   <?php
   require_once('menu_bar.php');
@@ -27,8 +22,8 @@
             <br>
         _END;
     ?>
-    <form action="nrplaygame.php" method="post" id="form_id" class="center_text">
-    	<input type="submit" name="next_problem" id="next_problem" value="Next Problem" />
+    <form action="nrplaygame.php" method="post">
+    	<input type="submit" name="next_problem" id="button" class="center_image" value="Next Problem" />
     </form>
 </body>
 </html>

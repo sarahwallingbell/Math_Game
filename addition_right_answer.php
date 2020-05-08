@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <style type="text/css">
-    .center{
-    	display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-    }
-    .center_text{
-    	text-align: center;
-    }
-    #button{
-        width:400px;
-        margin:auto;
-        text-align: center;
-    }
-    </style>
+
     <?php
     require_once("menu_bar.php");
     ?>
@@ -29,12 +16,10 @@
     $current_image = $_SESSION['burger_image'];
     echo <<<_END
     <br><br>
-    <img class="center" src=$burger_images[$current_image] width=$burger_width[$current_image] height=$burger_height[$current_image] >
+    <img class="center_image" src=$burger_images[$current_image] width=$burger_width[$current_image] height=$burger_height[$current_image] >
     <br>
     <form action="additionplaygame.php" method="post" id="form_id" class:"center_text">
-        <div id="button">
-        <input type="submit" name="next_problem" id="next_problem" value="Next Problem">
-        </div>
+        <input type="submit" name="next_problem" id="button" class="center_image" value="Next Problem">
     </form>
     _END;
     ?>

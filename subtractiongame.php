@@ -1,32 +1,22 @@
 <?php
     define("FILENAME","subtractionDB.txt");
-    define("POINTS_TO_WIN",10);
+    define("POINTS_TO_WIN",4);
 
-    $burger_images = array();
-    $burger_images[]="goodburger00.jpg";
-    $burger_images[]="goodburger01.jpg";
-    $burger_images[]="goodburger02.jpg";
-    $burger_images[]="goodburger03.jpg";
-    $burger_images[]="goodburger04.jpg";
-    $burger_images[]="goodburger05.jpg";
-    $burger_images[]="goodburger06.jpg";
-    $burger_images[]="goodburger07.jpg";
-    $burger_images[]="goodburger08.jpg";
-    $burger_images[]="goodburger09.jpg";
-    $burger_images[]="goodburger10.jpg";
+    $icecream_images = array();
+    $icecream_images[]="icecream0.png";
+    $icecream_images[]="icecream1.png";
+    $icecream_images[]="icecream2.png";
+    $icecream_images[]="icecream3.png";
+    $icecream_images[]="icecream4.png";
 
-    $burger_height = array();
-    $burger_height[] = 200;
-    $burger_height[] = 230;
-    $burger_height[] = 260;
-    $burger_height[] = 290;
-    $burger_height[] = 320;
-    $burger_height[] = 350;
-    $burger_height[] = 380;
-    $burger_height[] = 410;
-    $burger_height[] = 440;
-    $burger_height[] = 470;
-    $burger_height[] = 500;
+
+    $icecream_height = array();
+    $icecream_height[] = 200;
+    $icecream_height[] = 300;
+    $icecream_height[] = 375;
+    $icecream_height[] = 385;
+    $icecream_height[] = 410;
+
 
     global $num_probs;
     global $current_answer;

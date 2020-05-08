@@ -11,11 +11,11 @@
 
 
     $icecream_height = array();
-    $icecream_height[] = 200;
-    $icecream_height[] = 300;
-    $icecream_height[] = 375;
-    $icecream_height[] = 385;
-    $icecream_height[] = 410;
+    $icecream_height[] = 100;
+    $icecream_height[] = 150;
+    $icecream_height[] = 180;
+    $icecream_height[] = 190;
+    $icecream_height[] = 210;
 
 
     global $num_probs;

@@ -28,7 +28,7 @@ echo <<<_END
     	<input type="submit" id="button">
 	</form>
 	<br>
-	<img src=$icecream_images[$current_image] class="center_image" width=200 height=$icecream_height[$current_image]>
+	<img src=$icecream_images[$current_image] class="center_image" width=100 height=$icecream_height[$current_image]>
 _END;
 ?>
 </body>

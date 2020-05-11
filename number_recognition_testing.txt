@@ -1,5 +1,3 @@
-10_What place is the 1 in?_Tens_
-12_What place is the 2 in?_Ones_
-102_What place is the 2 in?_Ones_
-543_What place is the 5 in?_Hundreds_
-674_What place is the 7 in?_Tens_
+43 3 Ones
+475 7 Tens
+342 2 ones

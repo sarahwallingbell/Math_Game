@@ -6,6 +6,9 @@
 
 	</head>
 <body>
+    <?php
+    require_once "menu_bar.php";
+    ?>
   <form action="add_remove_subtraction_DB.php" method="post" id="form_id">
     <h2>Add/Remove Subtraction Problem</h2>
 

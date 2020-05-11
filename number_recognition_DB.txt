@@ -729,4 +729,4 @@
 987 7 ones  
 986 8 tens 
 987 7 ones 
- 
+567 7 ones

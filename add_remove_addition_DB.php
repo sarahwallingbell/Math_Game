@@ -48,10 +48,12 @@ elseif (isset($_POST['remove_problem'])){
 	}
 	//if we get
 	else {
+		echo "successfully removed problem";
 		//get rid of the line
-		//str_replace($line, "", $fileContents, 1);
+		$replace = "";
+	str_replace($line, $replace, $fileContents);
 		//overwrite the old file
-		//file_put_contents($fileName, $fileContents);
+		file_put_contents($fileName, $fileContents);
 	}
 
 }

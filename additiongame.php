@@ -3,30 +3,43 @@
     define("POINTS_TO_WIN",10);
 
     $burger_images = array();
-    $burger_images[]="goodburger00.jpg";
-    $burger_images[]="goodburger01.jpg";
-    $burger_images[]="goodburger02.jpg";
-    $burger_images[]="goodburger03.jpg";
-    $burger_images[]="goodburger04.jpg";
-    $burger_images[]="goodburger05.jpg";
-    $burger_images[]="goodburger06.jpg";
-    $burger_images[]="goodburger07.jpg";
-    $burger_images[]="goodburger08.jpg";
-    $burger_images[]="goodburger09.jpg";
-    $burger_images[]="goodburger10.jpg";
+    $burger_images[]="goodburger00.png";
+    $burger_images[]="goodburger01.png";
+    $burger_images[]="goodburger02.png";
+    $burger_images[]="goodburger03.png";
+    $burger_images[]="goodburger04.png";
+    $burger_images[]="goodburger05.png";
+    $burger_images[]="goodburger06.png";
+    $burger_images[]="goodburger07.png";
+    $burger_images[]="goodburger08.png";
+    $burger_images[]="goodburger09.png";
+    $burger_images[]="goodburger10.png";
 
     $burger_height = array();
-    $burger_height[] = 200;
-    $burger_height[] = 230;
-    $burger_height[] = 260;
-    $burger_height[] = 290;
-    $burger_height[] = 320;
-    $burger_height[] = 350;
-    $burger_height[] = 380;
-    $burger_height[] = 410;
-    $burger_height[] = 440;
-    $burger_height[] = 470;
-    $burger_height[] = 500;
+    $burger_width = array();
+    $burger_width[]=307;
+    $burger_height[] = 70;
+    $burger_width[]=310;
+    $burger_height[] = 100;
+    $burger_width[]=348;
+    $burger_height[] = 150;
+    $burger_width[]=348;
+    $burger_height[] = 160;
+    $burger_width[]=340;
+    $burger_height[] = 190;
+    $burger_width[]=342;
+    $burger_height[] = 220;
+    $burger_width[]=343;
+    $burger_height[] = 269;
+    $burger_width[]=344;
+    $burger_height[] = 283;
+    $burger_width[]=345;
+    $burger_height[] = 301;
+    $burger_width[]=346;
+    $burger_height[] = 315;
+    $burger_width[]=348;
+    $burger_height[] = 348;
+
 
 
     global $num_probs;

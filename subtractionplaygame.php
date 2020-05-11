@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<style type="text/css">
-.center{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-.center_text{
-	text-align: center;
-}
-#problem{
-	width:400px;
-	margin: 0px 0px 0px 700px;
-	text-align: right;
-}
-</style>
 
 <?php
 
@@ -40,11 +24,11 @@ echo <<<_END
 		$current_problem
 	</div>
 	<form action="subtractioncheckanswer.php?method=1&answer=$current_answer" method="post" class="center_text">
-    	<input type="text" id="digitplace" name="digitplace">
-    	<input type="submit">
+    	<input type="text" id="textbox" name="digitplace">
+    	<input type="submit" id="button">
 	</form>
 	<br>
-	<img src=$burger_images[$current_image] class="center" width=300 height=$burger_height[$current_image]>
+	<img src=$icecream_images[$current_image] class="center_image" width=100 height=$icecream_height[$current_image]>
 _END;
 ?>
 </body>

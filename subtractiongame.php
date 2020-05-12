@@ -37,6 +37,12 @@
 
     //pick a problem and print it
     function pick_problem(){
+        $random_num = rand(1,100);
+        $arr = include 'subtraction_got_wrong.txt';
+        $num = sizeof($arr) -1;
+        echo $num;
+
+        if($num == 0){
         global $num_probs;
         $problems = get_problems();
         $prob_num = rand(1,$num_probs)-1;
@@ -44,6 +50,35 @@
         $number2 = $problems[$prob_num][1];
         global $current_answer;
         $current_answer = $problems[$prob_num][2];
-        return $number1." - ".$number2." = ";
+        return $number1."-".$number2."=";
+        }
+        else if ($random_num > 30){
+        global $num_probs;
+        $problems = get_problems();
+        $prob_num = rand(1,$num_probs)-1;
+        $number1 = $problems[$prob_num][0];
+        $number2 = $problems[$prob_num][1];
+        global $current_answer;
+        $current_answer = $problems[$prob_num][2];
+        return $number1."-".$number2."=";
+        }
+        else {
+        $array_of_numbers = include 'subtraction_got_wrong.txt';
+        $max = sizeof($array_of_numbers) - 1;
+        echo $max;
+        $random = rand(0,$max-1);
+
+
+        $the_question = $array_of_numbers[$random];
+        print_r($the_question);
+
+        $first = $the_question[0]; 
+        $second = $the_question[1];
+
+        global $current_answer; 
+        $current_answer = $the_question[2];
+            
+        return $first."-".$second."=";
+        }
     }
 ?>
